@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Oxford Sofa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      /* CSS for overlay */
+      .carousel-item {
+        position: relative;
+        height: 100vh;
+      }
+      .carousel-item video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        z-index: 2;
+      }
+      .carousel-caption h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .carousel-caption p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      .carousel-caption .btn {
+        background-color: rgb(119, 115, 58);
+        color: white;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+      .carousel-caption .btn:hover {
+        background-color: rgb(139, 134, 61);
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .head{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      .product-title{
+          text-align: center;
+          font-size: 2.5rem;
+          font-style: italic;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+
+     .gtn{
+        background-color:  rgb(139, 134, 61);
+    border: 2px solid rgb(100, 82, 35);
+    border-radius: 25px;
+    padding: 8px;
+    font-size: 1.1rem;
+    color: aliceblue;
+}
+
+.gtn:hover{
+    background-color:rgb(119, 115, 58) ;
+    color: rgb(3, 3, 3);
+}
+.card{
+    border: 2px solid rgb(178, 197, 5);
+    box-shadow: 0 0 0 0.2rem rgba(187, 226, 14, 0.25);
+    transition: transform 0.3s ease-in-out;
+    font-style: italic;
+    margin: 15px;
+    text-align: center;
+}
+.card:hover{
+    transform: translateY(-10px);
+    background-color: antiquewhite;
+}
+      .navbar {
+        background-color: rgb(77, 74, 33);
+        padding: 15px;   
+      color: aliceblue;
+    }
+
+    .nav-item{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .footer {
+        background-color: rgb(77, 74, 33);
+        color: aliceblue;
+        padding: 20px;
+        text-align: center;
+    }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+           <h1 class="head">Oxford Sofas</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sofa Brands</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Burrow </a>
+                            <a class="dropdown-item" href="maiden home.html">Maiden Home</a>
+                            <a class="dropdown-item" href="#">FLOYD</a>
+                            <a class="dropdown-item" href="#">Article Sofas</a>
+                          </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  href="#">Sofa Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sofa Comparison</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Contact Us</a>
+                          <a class="dropdown-item" href="#">About US</a>
+                         
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+      </ol>
+  
+      <!-- Carousel inner -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="overlay"></div>
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="sofa 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="carousel-caption">
+            <h1>Welcome to Our Oxford Sofas Brand</h1>
+            <p>Explore a wide range of Sofas just for you.</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="overlay"></div>
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="sofa 2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="carousel-caption">
+            <h1>High-Quality Sofa Store in Pakistan</h1>
+            <p>Modern Sofa, Luxury Sofa , Velvet Sofa</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+  
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="overlay"></div>
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="sofa 3.mp4" type="video/mp4">
+          </video>
+          <div class="carousel-caption">
+            <h1>Find Sofa of your Dream in 2025</h1>
+            <p>Interior Designing: When Minimalism Collides</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+      <div class="container mt-5">
+    <div class="row">
+      <!-- Product Card 1 -->
+        <h1 class="product-title"><b>Our Collection</b></h1>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="luxury 1.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Bench Side Sofa</h5>
+            <a href="" class="gtn"> Buy Now </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="luxury 2.jfif" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Entryway Sofa</h5>
+            <a href="" class="gtn"> Buy Now </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="luxury 3.jpg" class="card-img-top" alt="Product Image" >
+          <div class="card-body">
+            <h5 class="card-title">Outdoor Sofa</h5>
+            <a href="" class="gtn"> Buy Now </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Oxford Sofas. All Rights Reserved.</p>
+    </div>
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
